@@ -8,7 +8,9 @@ for l in range(0,11):
             num.remove(i)
     num.insert(l,pivot)
 print(num)
-print(len(num))
+print("total prime numbers:",len(num))
+
+
 
 
 
