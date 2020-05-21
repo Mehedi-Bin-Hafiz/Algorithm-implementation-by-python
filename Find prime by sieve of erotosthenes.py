@@ -1,9 +1,6 @@
 
 
 num=[x for x in range(0,100) if x>1]
-max=len(num)+1
-s=0
-
 for l in range(0,11):
     pivot=num.pop(l)
     for i  in num:
