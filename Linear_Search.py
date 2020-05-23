@@ -1,7 +1,19 @@
 
+nums=[2,3,5,7,11,13,13,19,23,29]
 
-nums=[1,2,3,4,5,6,7,8,9]
 
-for i in nums:
-    if i==5:
-        print('found')
+def linear(nums,key):
+    global ind
+    for i in nums:
+        if i==key:
+            ind=nums.index(i)
+            return ("Found")
+    else:
+        ind=None
+        return ("Not found")
+
+key=int(input("Enter your key: "))
+
+res=linear(nums,key)
+
+print(key,"is ", res , " at ", ind)
