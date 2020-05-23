@@ -1,5 +1,3 @@
-
-
 nums=[x for x in range(2,101)]
 print(nums)
 
@@ -13,8 +11,3 @@ for l in range(0,12):
 
 print(nums)
 print("The number of prime numbers: ",len(nums))
-
-
-
-
-
