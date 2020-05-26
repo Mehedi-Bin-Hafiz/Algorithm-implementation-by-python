@@ -1,7 +1,6 @@
 import datetime
 begin_time = datetime.datetime.now()
-nums=[1,6,3,1,5,8,4,2,1]
-
+nums=[2,11,5,13,6,13,7,19,23,29]
 def linear(nums,key):
     global ind
     for i in nums:
