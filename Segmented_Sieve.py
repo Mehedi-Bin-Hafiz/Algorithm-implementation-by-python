@@ -26,10 +26,11 @@ primes=[]
 for i in elements:
     if i==2 or i==3 or i==5 or i==7:
         primes.append(i)
-    for j in nums:
-        if i%j==0:
-            break
     else:
-        primes.append(i)
+        for j in nums:
+            if i%j==0:
+                break
+        else:
+            primes.append(i)
 
 print(primes)
