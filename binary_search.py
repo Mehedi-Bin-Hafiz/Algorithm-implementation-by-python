@@ -3,7 +3,7 @@ import datetime
 start=datetime.datetime.now()
 nums=[2,11,5,13,6,13,7,19,23,29]
 nums.sort()
-key=29
+key=0
 def binary(nums,key):
 
     low=0
@@ -20,7 +20,7 @@ def binary(nums,key):
         else:
             pass
     else:
-        return ("Not found")
+        return ("Not found",None)
 comment,index=binary(nums,key)
 print(comment,index)
 
