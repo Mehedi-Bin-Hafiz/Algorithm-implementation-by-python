@@ -1,28 +1,30 @@
+
 import datetime
+start=datetime.datetime.now()
+nums=[2,11,5,13,6,13,7,19,23,29]
+nums.sort()
+key=29
+def binary(nums,key):
 
-begin_time = datetime.datetime.now()
-l=[1,6,3,1,5,8,4,2,1]
-l.sort()
+    low=0
+    high=len(nums)-1
 
-key=8
-low=0
-high=len(l)-1
-while(low<=high):
-    mid=int((low+high)/2)
-    if (l[mid] == key):
-        print('found at index',mid)
-        break
-    elif(l[mid]>key):
-        high=mid-1
-    elif(l[mid]<key):
-        low=mid+1
+    while(low<=high):
+        mid=int((low+high)/2)
+        if (nums[mid]==key):
+            return ("found at index",mid)
+        elif(nums[mid]>key):
+            high=mid-1
+        elif(nums[mid]<key):
+            low=mid+1
+        else:
+            pass
     else:
-        pass
-else:
-    print("not found")
+        return ("Not found")
+comment,index=binary(nums,key)
+print(comment,index)
 
-print(datetime.datetime.now() - begin_time)
-
+print(datetime.datetime.now()-start)
 
 
 
