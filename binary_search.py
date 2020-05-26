@@ -21,7 +21,6 @@ while(low<=high):
 else:
     print("not found")
 
-
 print(datetime.datetime.now() - begin_time)
 
 
